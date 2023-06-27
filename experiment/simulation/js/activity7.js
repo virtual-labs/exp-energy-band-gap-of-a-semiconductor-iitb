@@ -1,4 +1,3 @@
-// declare var Chart;
 var label = [];
 var data = [];
 var data1 = [];
