@@ -4,7 +4,7 @@ var context;
 var canvas_box_scale;
 var scene;
 var rect;
-var cc = document.getElementById("pannelcreate");
+var cc = (document.getElementById('pannelcreate'));
 var pp = new Pannel(cc);
 pp.addoffcanvas(3);
 var act1_btn = document.createElement('div');
@@ -32,7 +32,7 @@ var total_score = 0;
 var current_score = 3;
 var global_score = 0;
 var a1_panel;
-var all_text_content = document.getElementById("div");
+var all_text_content = document.getElementById('div');
 var canvas_box_scale = 1;
 var highlighted_images = [];
 var a1_labels = [];
@@ -57,17 +57,17 @@ function activity1() {
     canvas = pp.canvas;
     context = canvas.getContext('2d');
     // add rect and scene
-    canvas.style.cursor = "crosshair";
+    canvas.style.cursor = 'crosshair';
     rect = canvas.getBoundingClientRect();
     scene = new Scene();
     // add canvas sizing
     window.onload = a1_windowresize;
     window.onresize = a1_windowresize;
     a1_windowresize();
-    var bsOffcanvas = new bootstrap.Offcanvas(document.getElementById("offcanvasRight3"));
+    var bsOffcanvas = new bootstrap.Offcanvas(document.getElementById('offcanvasRight3'));
     bsOffcanvas.show();
     a1_draw_all_components();
-    window.addEventListener("resize", a1_display_current_question);
+    window.addEventListener('resize', a1_display_current_question);
     // add_button(`<button id='screen-button' class="btn btn-info" style="width: 100%; margin-bottom: 5%;" onclick="(() =>{
     //     document.getElementById('screen-button').remove();
     //     canvas.addEventListener('click',a1_mouseclick);
@@ -92,9 +92,10 @@ function a1_windowresize() {
 }
 function a1_canvas_size() {
     canvas.width = window.innerWidth * 0.91;
-    canvas.height = canvas.width * 1080.0 / 1920 * 0.85;
+    canvas.height = ((canvas.width * 1080.0) / 1920) * 0.85;
     lscale = canvas.width / 1920.0;
-    document.getElementById('leftpannel').style.height = (canvas.height + 5) + "px";
+    document.getElementById('leftpannel').style.height =
+        canvas.height + 5 + 'px';
     document.getElementById('leftpannel').style.margin = '0';
 }
 function a1_canvas_mapping() {
@@ -103,34 +104,72 @@ function a1_canvas_mapping() {
 }
 function a1_draw_all_components() {
     var sq = new Chemistry.Custome_image(dc_power_supply, new Chemistry.Point(600, 200), 156, 400, canvas);
-    sq.name = "dc_power_supply";
+    sq.name = 'dc_power_supply';
     scene.add(sq);
     var sq = new Chemistry.Custome_image(voltmeter, new Chemistry.Point(1450, 170), 155, 423, canvas);
-    sq.name = "voltmeter";
+    sq.name = 'voltmeter';
     scene.add(sq);
     var sq = new Chemistry.Custome_image(diode, new Chemistry.Point(1650, 600), 307, 101, canvas);
-    sq.name = "diode";
+    sq.name = 'diode';
     scene.add(sq);
     var sq = new Chemistry.Custome_image(heater, new Chemistry.Point(280, 600), 409, 289, canvas);
-    sq.name = "heater";
+    sq.name = 'heater';
     scene.add(sq);
     var sq = new Chemistry.Custome_image(thermometer, new Chemistry.Point(1000, 600), 110, 507, canvas);
-    sq.name = "thermometer";
+    sq.name = 'thermometer';
     scene.add(sq);
     var sq = new Chemistry.Custome_image(ammeter, new Chemistry.Point(230, 300), 166, 166, canvas);
-    sq.name = "ammeter";
+    sq.name = 'ammeter';
     scene.add(sq);
 }
 //list of all activity 1 questions
 function a1_load_questions() { }
 {
     question = [];
-    question.push({ srno: 1, question: "Select <span style='color: #018fc3'> DC Power Supply </span>", ans: "dc_power_supply", hint: ["Has Suction and Discharge", "Has valve attached", "Triangular Base"] });
-    question.push({ srno: 2, question: "Select <span style='color: #018fc3'> Voltmeter </span>", ans: "voltmeter", hint: ["Rectangular", "Mounted Vertically", "Has valves attached"] });
-    question.push({ srno: 3, question: "Select <span style='color: #018fc3'> Diode </span>", ans: "diode", hint: ["Rectangular", "Mounted Vertically", "Has valves attached"] });
-    question.push({ srno: 4, question: "Select <span style='color: #018fc3'> Heater </span>", ans: "heater", hint: ["U-Shape", "Mounted horizontally", "Has two pins"] });
-    question.push({ srno: 5, question: "Select <span style='color: #018fc3'> Thermometer </span>", ans: "thermometer", hint: ["Rectangular box with sensor", "Display SET T", "Has two wires protruding down"] });
-    question.push({ srno: 6, question: "Select <span style='color: #018fc3'> Ammeter </span>", ans: "ammeter", hint: ["Rectnagular box with sensor", "Horizontal", ""] });
+    question.push({
+        srno: 1,
+        question: "Select <span style='color: #018fc3'> DC Power Supply </span>",
+        ans: 'dc_power_supply',
+        hint: [
+            'Has Suction and Discharge',
+            'Has valve attached',
+            'Triangular Base',
+        ],
+    });
+    question.push({
+        srno: 2,
+        question: "Select <span style='color: #018fc3'> Voltmeter </span>",
+        ans: 'voltmeter',
+        hint: ['Rectangular', 'Mounted Vertically', 'Has valves attached'],
+    });
+    question.push({
+        srno: 3,
+        question: "Select <span style='color: #018fc3'> Diode </span>",
+        ans: 'diode',
+        hint: ['Rectangular', 'Mounted Vertically', 'Has valves attached'],
+    });
+    question.push({
+        srno: 4,
+        question: "Select <span style='color: #018fc3'> Heater </span>",
+        ans: 'heater',
+        hint: ['U-Shape', 'Mounted horizontally', 'Has two pins'],
+    });
+    question.push({
+        srno: 5,
+        question: "Select <span style='color: #018fc3'> Thermometer </span>",
+        ans: 'thermometer',
+        hint: [
+            'Rectangular box with sensor',
+            'Display SET T',
+            'Has two wires protruding down',
+        ],
+    });
+    question.push({
+        srno: 6,
+        question: "Select <span style='color: #018fc3'> Ammeter </span>",
+        ans: 'ammeter',
+        hint: ['Rectnagular box with sensor', 'Horizontal', ''],
+    });
 }
 function a1_display_current_question() {
     //document.getElementById("score-div-box").innerText = total_score.toString();
@@ -147,7 +186,7 @@ function a1_display_current_question() {
         a1_labels[a1_index[j]].draw();
     }
     question_text = new Chemistry.Text(text, new Chemistry.Point(1100, 520), canvas);
-    question_text.color = "white";
+    question_text.color = 'white';
     // question_text.draw();
     //display_score=new Chemistry.Text(`Score: ${total_score}/27`,new Chemistry.Point(1650,620),canvas);
     //display_score.color="yellow";
@@ -162,16 +201,19 @@ function load_higlighted_images() {
         [diode, diode],
         [heater, heater],
         [thermometer, thermometer],
-        [ammeter, ammeter]
+        [ammeter, ammeter],
     ];
     a1_labels = [
-        new Chemistry.Text("dc_power_supply", new Chemistry.Point(800, 200), canvas),
-        new Chemistry.Text("voltmeter", new Chemistry.Point(1600, 170), canvas),
-        new Chemistry.Text("diode", new Chemistry.Point(1650, 750), canvas),
-        new Chemistry.Text("heater", new Chemistry.Point(280, 800), canvas),
-        new Chemistry.Text("thermometer", new Chemistry.Point(1100, 600), canvas),
-        new Chemistry.Text("ammemter", new Chemistry.Point(220, 150), canvas)
+        new Chemistry.Text('dc_power_supply', new Chemistry.Point(700, 120), canvas),
+        new Chemistry.Text('voltmeter', new Chemistry.Point(1550, 170), canvas),
+        new Chemistry.Text('diode', new Chemistry.Point(1650, 700), canvas),
+        new Chemistry.Text('heater', new Chemistry.Point(280, 800), canvas),
+        new Chemistry.Text('thermometer', new Chemistry.Point(1100, 600), canvas),
+        new Chemistry.Text('ammeter', new Chemistry.Point(150, 150), canvas),
     ];
+    a1_labels.map((label) => {
+        label.font = '30vw Arial';
+    });
 }
 function a1_random_questions() {
     arrayofrandquestion = [];
@@ -200,7 +242,7 @@ function a1_check_isinside(x, y) {
         if (scene.container[i].geo.isinside(new Chemistry.Point(x, y))) {
             if (scene.container[i].geo.name == ans) {
                 found = 1;
-                var bsOffcanvas = new bootstrap.Offcanvas(document.getElementById("offcanvasRight3"));
+                var bsOffcanvas = new bootstrap.Offcanvas(document.getElementById('offcanvasRight3'));
                 bsOffcanvas.show();
                 let original_image = scene.container[i].geo.img;
                 scene.container[i].geo.img = highlighted_images[i][0];
@@ -232,9 +274,9 @@ function a1_check_isinside(x, y) {
         }
     }
     if (found == 1) {
-        display_result = new Chemistry.Text("Bingo! it is correct", new Chemistry.Point(1100, 450), canvas);
-        display_result.color = "yellow";
-        display_result.font = "24px";
+        display_result = new Chemistry.Text('Bingo! it is correct', new Chemistry.Point(1100, 450), canvas);
+        display_result.color = 'yellow';
+        display_result.font = '24px';
         //display_result.draw();
         if (current_question <= question.length) {
             current_question++;
@@ -260,9 +302,9 @@ function a1_check_isinside(x, y) {
     }
     else if (found == 2) {
         console.log(current_hint);
-        var bsOffcanvas = new bootstrap.Offcanvas(document.getElementById("offcanvasRight3"));
+        var bsOffcanvas = new bootstrap.Offcanvas(document.getElementById('offcanvasRight3'));
         bsOffcanvas.show();
-        display_result = new Chemistry.Text("Try again. Hint:" + question[current_index].hint[current_hint - 1], new Chemistry.Point(1100, 450), canvas);
+        display_result = new Chemistry.Text('Try again. Hint:' + question[current_index].hint[current_hint - 1], new Chemistry.Point(1100, 450), canvas);
         // document.getElementById("question-div-box").innerHTML = `
         // <div class='text-color-purple'>Thats not a ${ans}</div>
         // <div>Try Again!!</div>
@@ -281,8 +323,8 @@ function a1_check_isinside(x, y) {
             current_score = 3 - current_hint;
             current_hint++;
         }
-        display_result.color = "white";
-        display_result.font = "15px";
+        display_result.color = 'white';
+        display_result.font = '15px';
         //display_result.draw();
         timer1 = setTimeout(a1_change_question, 2000);
     }
@@ -303,13 +345,13 @@ function a1_change_question() {
         // display_result.color="Green";
         // display_result.draw();
         global_score = total_score;
-        const act2 = document.createElement("input");
-        act2.type = "button";
+        const act2 = (document.createElement('input'));
+        act2.type = 'button';
         act2.onclick = activity4;
         //document.getElementById("root").appendChild(act2);
-        act2.value = "Next";
-        act2.className = "btn btn-success";
-        act2.style.fontSize = "1.0vw";
+        act2.value = 'Next';
+        act2.className = 'btn btn-success';
+        act2.style.fontSize = '1.0vw';
         // guide.value  = "Click Next Button";
         //document.getElementById("question-div-box").innerText = "";
         // add_button(`<button id='screen-button' class="btn btn-info" style="width: 100%; margin-bottom: 5%;" onclick="(() =>{
@@ -318,7 +360,7 @@ function a1_change_question() {
         //     activity2();})();">Next</button>`)
         pp.addtorightpannel(act1_btn.innerHTML, 3);
         //document.getElementById("question-div-box").appendChild(act2);
-        window.removeEventListener("resize", a1_display_current_question);
+        window.removeEventListener('resize', a1_display_current_question);
         //clearInterval(timer1);
     }
     else {
