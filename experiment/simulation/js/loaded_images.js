@@ -11,4 +11,7 @@ var thermometer = new Image();
 thermometer.src = `./images/webp/Thermometer2.webp`;
 var ammeter = new Image();
 ammeter.src = `./images/webp/Ammeter.webp`;
+//assembly image
+var assembly = new Image();
+assembly.src = `./images/Assembly.webp`;
 //# sourceMappingURL=loaded_images.js.map

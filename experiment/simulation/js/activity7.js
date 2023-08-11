@@ -6,9 +6,12 @@ var slope;
 function draw_chart() {
     document.getElementById('hide_panel3').click();
     pp.clearleftpannel();
+    pp.clearrightpannel();
+    pp.addoffcanvas(3);
     pp.addcanvas('myChart');
+    pp.showtitle(`<p id="exp-title" style="width:20vw;">Calculate slope</p>`, 3);
     if (document.getElementById('panel1_btn')) {
-        document.getElementById("panel1_btn").remove();
+        document.getElementById('panel1_btn').remove();
     }
     // pp.addButtonToRightPanel("hello", print_hello, 3);
     for (let i = 0; i < main_table_data.length; i++) {
@@ -17,11 +20,11 @@ function draw_chart() {
     }
     calculate_y_datapoints();
     var ctx = document.getElementById('myChart');
-    ctx.style.backgroundColor = "white";
-    ctx.style.marginTop = "5px";
-    ctx.style.marginLeft = "10%";
-    ctx.style.padding = "10px";
-    ctx.style.borderRadius = "8px";
+    ctx.style.backgroundColor = 'white';
+    ctx.style.marginTop = '5px';
+    ctx.style.marginLeft = '10%';
+    ctx.style.padding = '10px';
+    ctx.style.borderRadius = '8px';
     if (typeof chart != 'undefined') {
         chart.destroy();
     }
@@ -51,13 +54,13 @@ function draw_chart() {
                     fill: false,
                     borderColor: 'red',
                     tension: 0.5,
-                    showLine: true
+                    showLine: true,
                     // yAxisID: 'A',
                     // borderWidth: 1,
                     // borderColor: "red",
                     // backgroundColor: "rgba(255, 0, 0, 0.5)",
                 },
-            ]
+            ],
         },
         options: {
             maintainAspectRatio: true,
@@ -65,17 +68,17 @@ function draw_chart() {
                 y: {
                     title: {
                         display: true,
-                        text: 'log<sub>10</sub>(I<sub>s</sub>)',
-                        font: { size: 14, weight: 'bold' }
-                    }
+                        text: 'log(Is)',
+                        font: { size: 14, weight: 'bold' },
+                    },
                 },
                 x: {
                     title: {
                         display: true,
                         text: '1000/T',
-                        font: { size: 14, weight: 'bold' }
-                    }
-                }
+                        font: { size: 14, weight: 'bold' },
+                    },
+                },
             },
             plugins: {
                 title: {
@@ -83,9 +86,9 @@ function draw_chart() {
                     text: `${material}`,
                     font: { size: 18 },
                 },
-                legend: { labels: { font: { size: 14, weight: 'bold' } } }
+                legend: { labels: { font: { size: 14, weight: 'bold' } } },
             },
-        }
+        },
     });
 }
 function calculate_y_datapoints() {
@@ -96,7 +99,7 @@ function calculate_y_datapoints() {
     }
     slope = pol[0];
     calculated_energy_band_gap = Math.abs(0.5036 / slope);
-    pp.showdescription("", 3);
+    pp.showdescription('', 3);
     let text_box = `
     <div>
     <div>
@@ -139,12 +142,14 @@ function calculate_y_datapoints() {
     pp.addtorightpannel(text_box, 3);
 }
 function verify_act7() {
-    let val1 = document.getElementById(`cal_slope`);
+    console.log(slope);
+    let val1 = (document.getElementById(`cal_slope`));
     if (!verify_values(Math.abs(parseFloat(val1.value)), Math.abs(slope))) {
         alert(`please check slope`);
         return;
     }
-    pp.showdescription("Entered Slope Value is correct", 3);
+    pp.showtitle(`<p id="exp-title" style="width:20vw;">Calculate energy band gap</p>`, 3);
+    pp.showdescription(`<p class='discription_text'>Entered Slope Value is correct.</p>`, 3);
     document.getElementById('myChart').remove();
     let left_panel_text = `
     <div id="band-gap-text">
@@ -163,49 +168,60 @@ function verify_act7() {
     pp.addtoleftpannel(left_panel_text);
 }
 function verify_band_gap() {
-    let val1 = document.getElementById(`cal_bg`);
+    let val1 = (document.getElementById(`cal_bg`));
     if (!verify_values(Math.abs(parseFloat(val1.value)), calculated_energy_band_gap)) {
         alert(`please check slope`);
         return;
     }
+    pp.clearrightpannel();
+    pp.addoffcanvas(3);
     show_panel(3);
-    pp.showdescription("Calculated Band Gap Value is correct", 3);
+    pp.showdescription(`<p class='discription_text'>Calculated Band Gap Value is correct.</p>`, 3);
     document.getElementById('vbg').remove();
     let ele = document.getElementById('band-gap-text');
     ele.innerHTML += `
-    <h3>Standerd Engery Band Gap for ${material} = <span style="color: blue;">${std_band_gap}</span> volt</h3>
+    <h3>Standard Engery Band Gap for ${material} = <span style="color: blue;">${std_band_gap}</span> volt</h3>
 
     <div>
 
-        <h3>Is calculated band gap greater than standerd band gap?</h3>
+      <h3>Is calculated band gap greater than standard band gap?</h3>
 
-        <label for="">Yes</label>
-        <input style="display: inline; width: 10%;" type="radio" name="" onclick="compare_band_gap('yes');">
+      <label for="radio-1">Yes</label>
+      <input id='radio-1' style="display: inline; width: 10%;" type="radio" name="ans">
 
-        <br>
+      <br>
 
-        <label for="">No</label>
-        <input style="display: inline; width: 10%;" type="radio" name="" onclick="compare_band_gap('no');">
+      <label for="radio-2">No</label>
+      <input id='radio-2' style="display: inline; width: 10%;" type="radio" name="ans">
 
-    </div>
+      <button class="btn btn-primary" type='button' onclick='compare_band_gap();' style="position:absolute; left:2vw; top:25vw;">Submit</button>
+      </div>
     `;
-    document.getElementById('bg-val').innerText = calculated_energy_band_gap.toFixed(3);
-    document.getElementById('bg-val').style.color = "blue";
+    document.getElementById('bg-val').innerText =
+        calculated_energy_band_gap.toFixed(3);
+    document.getElementById('bg-val').style.color = 'blue';
 }
-function compare_band_gap(str) {
+function compare_band_gap() {
+    let ra1 = (document.getElementById('radio-1'));
+    let ra2 = (document.getElementById('radio-2'));
     let ans;
     if (calculated_energy_band_gap > std_band_gap) {
-        ans = "yes";
+        ans = true;
     }
     else {
-        ans = "no";
+        ans = false;
     }
-    if (str == ans) {
-        alert("Correct Answer!!");
+    if (ra1.checked && ans) {
+        alert('Correct Answer!!');
+    }
+    else if (ra2.checked && !ans) {
+        alert('Correct Answer!!');
     }
     else {
-        alert("Your Answer is incorrect, please the values again.");
+        alert('Your Answer is incorrect, please the values again.');
     }
+    console.log(ra1.checked);
+    console.log(ra2.checked);
 }
 var calculated_energy_band_gap;
 // //   activity5();

@@ -9,9 +9,10 @@ class Pannel {
     constructor(divpannelid) {
         this.divpannel = divpannelid;
         this.redraw();
-        this.leftpannel = document.getElementById("leftpannel");
-        this.rightpannel = document.getElementById("rightpannel");
-        this.leftpannel.style.height = (window.innerHeight - 5).toString() + 'px';
+        this.leftpannel = document.getElementById('leftpannel');
+        this.rightpannel = (document.getElementById('rightpannel'));
+        this.leftpannel.style.height =
+            (window.innerHeight - 5).toString() + 'px';
         //this.rightpannel.style.height = (window.innerHeight - 5).toString() + 'px';
         // this.offcanvasRightLabel1 = <HTMLDivElement> document.getElementById('offcanvasRightLabel1');
     }
@@ -33,44 +34,44 @@ class Pannel {
 
         </div>
     </div>
-    <button class="offcanvasbtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight${id}" aria-controls="offcanvasRight${id}" style="width: 4%;"><i class="bi bi-gear offcanvasicon" style="font-size: calc(1vw + 12px);"></i></button>
+    <button class="offcanvasbtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight${id}" aria-controls="offcanvasRight${id}" style="width: 4%;"><i class="bi bi-arrow-bar-left"></i></button>
       <br>  `;
     }
     addcanvas(canvasid) {
-        this.leftpannel.innerHTML = `<canvas id="${canvasid}"></canvas>`;
+        this.leftpannel.innerHTML += `<canvas id="${canvasid}"></canvas>`;
         this.canvas = document.getElementById(canvasid);
     }
     addtoleftpannel(component) {
         this.leftpannel.innerHTML += component;
     }
     addtorightpannel(component, id) {
-        document.getElementById("pannel" + id).innerHTML += component;
+        document.getElementById('pannel' + id).innerHTML += component;
     }
     clearleftpannel() {
-        this.leftpannel.innerHTML = "";
+        this.leftpannel.innerHTML = '';
     }
     clearrightpannel() {
-        this.rightpannel.innerHTML = "";
+        this.rightpannel.innerHTML = '';
     }
     showdescription(text, id) {
-        document.getElementById("pannel" + id).innerHTML = `<div id="description">${text}</div>`;
+        document.getElementById('pannel' + id).innerHTML = `<div id="description">${text}</div>`;
     }
     showtitle(text, id) {
-        document.getElementById("offcanvasRightLabel" + id).innerHTML = text;
+        document.getElementById('offcanvasRightLabel' + id).innerHTML = text;
     }
     showscore(text, id) {
-        document.getElementById("pannel" + id).innerHTML += `<div style="width: 90%;"  id="score">Score: ${text}</div>`;
+        document.getElementById('pannel' + id).innerHTML += `<div style="width: 90%;"  id="score">Score: ${text}</div>`;
         // this.rightpannel.innerHTML+=`<div style=""  id="score">Score: ${text}</div>`
     }
     addButtonToRightPanel(text, fun_name, id) {
         this.button = document.createElement('button');
         // this.button.style = "position: absolute; bottom: 12vh; width: 90%;";
-        this.button.setAttribute("style", "position: absolute; bottom: 12vh; width: 90%;");
-        this.button.className = "btn btn-primary";
+        this.button.setAttribute('style', 'position: absolute; bottom: 12vh; width: 90%;');
+        this.button.className = 'btn btn-primary';
         this.button.innerHTML = text;
-        this.button.addEventListener("click", fun_name);
+        this.button.addEventListener('click', fun_name);
         // this.addtorightpannel(this.button, id);
-        document.getElementById("pannel" + id).appendChild(this.button);
+        document.getElementById('pannel' + id).appendChild(this.button);
     }
 }
 class Table {
@@ -90,12 +91,12 @@ class Table {
     }
     draw() {
         console.log(this.data);
-        let row = "";
+        let row = '';
         for (let i = 0; i < this.heading_column.length; i++) {
             row += `<th>${this.heading_column[i]}</th>`;
         }
-        document.getElementById("header-1").innerHTML = row;
-        document.getElementById('table-body').innerHTML = "";
+        document.getElementById('header-1').innerHTML = row;
+        document.getElementById('table-body').innerHTML = '';
         for (let i = 0; i < this.data.length; i++) {
             let col = `<tr>`;
             for (let j = 0; j < this.data[i].length; j++) {
@@ -104,6 +105,25 @@ class Table {
             col += `</tr>`;
             document.getElementById('table-body').innerHTML += col;
         }
+    }
+}
+class Table1 extends Table {
+    constructor(heading_column, data) {
+        super(heading_column, data);
+        this.template = `    
+   <div style="height: 100%" class='table-responsive'>
+    <table class="table">
+        <thead>
+            <tr id="header-1">
+            </tr>
+        </thead>
+        <tbody id="table-body">
+        
+        </tbody>
+    </table>
+   </div>`;
+        this.heading_column = heading_column;
+        this.data = data;
     }
 }
 //# sourceMappingURL=pannel.js.map
