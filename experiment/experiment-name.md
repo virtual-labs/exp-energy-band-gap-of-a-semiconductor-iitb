@@ -1,1 +1,1 @@
-## Experiment name
+## Energy band gap of a semiconductor

@@ -1,0 +1,256 @@
+
+
+
+var std_band_gap;
+
+
+var act4_first_btn = `<button id="panel1_btn" class="btn btn-primary" onclick="page_2();" style="
+position: absolute; bottom: 8vh; width: 85%;">Next</button>`;
+
+
+function activity4() {
+    pp.clearleftpannel();
+    pp.clearrightpannel();
+    
+
+    pp.addoffcanvas(3);
+
+    pp.showtitle('Determine the energy band gap (Eg) of semiconductor', 3);
+
+    load_input_fields();
+
+    
+
+    pp.addcanvas('mycanvas');
+    pp.showtitle(`<p id="exp-title">Simulation with the Experimental Setup</p>`, 3);
+    canvas = pp.canvas;
+    context = canvas.getContext('2d');
+
+
+    // add rect and scene
+    canvas.style.cursor="crosshair";
+    rect=canvas.getBoundingClientRect();
+    scene = new Scene();
+
+    let img1 = new Chemistry.Custome_image(assembly, new Chemistry.Point(900, 480), 1500, 829, canvas);
+    scene.add(img1);
+
+
+    // add canvas sizing
+    window.onload=a2_windowresize;
+    window.onresize=a2_windowresize;
+    a2_windowresize();
+
+
+    function a2_windowresize() {
+        //canvas size
+        a2_canvas_size();
+    
+       //draw scene
+        scene.draw();
+
+}
+
+function load_input_fields() {
+    let inp_fields = `
+    <div style='position: absolute;'>
+
+    <div>
+        <select onchange="select_data();" class='form-select' id="element" name="element" style='position: absolute; width: 18vw; background-color: black; color: white; font-size: 1.5vw;'> 
+            <option selected value="">--Select the Element--</option>
+        </select>
+    </div>
+
+    <br>
+
+    <div>
+        <label style='position: absolute; left: 27.5vw; width: 11.2vw; top: 27vw; font-size: 1vw; font-weight: 600; font-size: 3vw;' id='voltage-label'>V</label>
+
+        <select onchange="select_data();" name="voltage" id="voltage" style='position: absolute; left: 7.5vw; width: 11.2vw; top: 27.9vw; border: none; background-color: black; color: white; font-size: 1vw;' >
+            <option selected value="">--Select the Voltage--</option>
+        </select>
+    </div>
+
+    <br>
+
+    <div>
+        
+        <input disabled class="form-control" type="text" id="temperature" style='position: absolute; left: 34vw; width: 12vw; font-size: 1.3vw; background-color: black; color: white;' />
+    </div>
+
+    <br>
+
+    <div>
+        
+        <input disabled class="form-control" type="text" id="s_current" style='position: absolute; left: 57vw; width: 14vw; top: 14vw; font-size: 1.3vw; background-color: black; color: white;' />
+    </div>
+
+    <br>
+
+    <h4 style='position: absolute; left: 34vw; top: 41vw; width: 40vw; font-size: 2vw;'>Note: Please note down these readings</h4>
+
+    </div>`;
+
+    pp.addtoleftpannel(inp_fields);
+
+    show_panel(3);
+
+    let right_panel_text = `
+    <h4>* First You need to select the Element. i.e Germanium or Sillicon</h4>
+    <h4>* Then select the voltage by clicking on the battery component</h4>
+    <h4>* Observe the resulting Current in &mu;A in ammeter</h4>
+    <h4>* Observe the resulting temperature in degree celcius</h4>
+    `;
+
+    pp.showdescription(right_panel_text, 3);
+
+    load_act4_options();
+
+    }
+    
+    function a2_canvas_size() {
+        //resizing
+        canvas.width=window.innerWidth*0.91;
+        canvas.height=canvas.width*1080.0/1920*0.85;
+        lscale=canvas.width/1920.0;
+        document.getElementById('leftpannel').style.height = (canvas.height + 5) + "px";
+        document.getElementById('leftpannel').style.margin = '0';
+    
+        //canvas mapping
+        context.translate(0,canvas.height);
+        context.scale(1,-1);
+    }
+    
+
+
+
+
+
+
+
+
+            
+
+
+}
+
+
+function load_act4_options() {
+    //for element
+    let sel_1: HTMLSelectElement = <HTMLSelectElement> document.getElementById('element');
+    for(let i=0; i<energy_band.length; i++) {
+        sel_1.innerHTML += `<option value='${energy_band[i]["name"]}'>${(energy_band[i]["name"]).toUpperCase()}</option>`;
+    }
+
+    //for voltage
+    let sel_2: HTMLSelectElement = <HTMLSelectElement> document.getElementById('voltage');
+    for(let i=1; i<=4; i++) {
+        sel_2.innerHTML += `<option value='${i}'>${i+"v"}</option>`;
+    }
+
+
+    pp.addtorightpannel(act4_first_btn, 3);
+
+    //for temperature
+
+
+
+    //for saturation current
+
+
+}
+
+function select_data() {
+    let element: HTMLSelectElement = <HTMLSelectElement> document.getElementById('element');
+    let voltage: HTMLSelectElement = <HTMLSelectElement> document.getElementById('voltage'); 
+    let label: HTMLLabelElement = <HTMLLabelElement> document.getElementById('voltage-label');
+
+    material = element.value;
+    selected_voltage = parseInt(voltage.value);
+    label.innerText =  voltage.value + 'v';
+    
+    for(let i=0; i<energy_band.length; i++) {
+        if(energy_band[i].name == material) {
+            T = energy_band[i].t;
+            IS = energy_band[i]["v" + selected_voltage];
+            std_band_gap = energy_band[i].band_gap;
+            break;
+        }
+    }
+
+    for(let i=0; i<IS.length; i++) {
+        IS[i] = parseFloat(std_deviation(IS[i]).toFixed(1));
+    }
+
+    IS.sort(function(a, b){return b - a});
+
+    let temperature: HTMLInputElement = <HTMLInputElement> document.getElementById('temperature');
+    let s_current: HTMLInputElement = <HTMLInputElement> document.getElementById('s_current');
+
+    temperature.value = T[0].toString() + '℃';
+    s_current.value = IS[0].toString() + ' µA';
+
+    if(material != '' && selected_voltage != 0) {
+        show_panel(3);
+    }
+
+}
+
+function load_page_2() {
+    if(material != '' && selected_voltage != 0) {
+        page_2();
+    }
+}
+
+
+
+function page_2() {
+    hide_panel(3)
+    pp.clearleftpannel();
+    document.getElementById('panel1_btn').remove();
+
+   
+
+    let headings = ["Sr No.", "Temperature (&#8451;)", "Saturation Current I<sub>s</sub> (&mu;A)", "check"];
+
+
+    let verify_row = [["1", "<input type='number' class='form-control' id='temp-verify' />", "<input type='number' class='form-control' id='amp-verify' />", `<input type="submit" class="btn btn-primary" onclick="act4_verify_pg2();">`]];
+
+    
+    let table = new Table(headings, verify_row);
+
+
+    pp.addtoleftpannel(table.template);
+
+    table.draw();
+
+    console.log("IS => ",  IS);
+    console.log("T => ",  T);
+    
+}
+
+function act4_verify_pg2() {
+        let val1: HTMLInputElement = <HTMLInputElement> document.getElementById(`temp-verify`);
+    let val2: HTMLInputElement = <HTMLInputElement> document.getElementById(`amp-verify`);
+
+    if(!verify_values(parseFloat(val1.value), T[0])) {
+        alert(`please correct Ut value!!`);
+        return;
+    }
+
+    if(!verify_values(parseFloat(val2.value), IS[0])) {
+        alert(`please correct the Viscosity of liquid value!!`);
+        return;
+    }
+
+    alert("Calculation is right!!");
+
+    activity5();
+}
+
+
+
+
+
+
+
