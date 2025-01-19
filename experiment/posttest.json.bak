@@ -1,0 +1,48 @@
+[
+   {
+
+      "question": "In the experiment to determine the energy band gap of a semiconductor diode by changing the temperature while keeping the biasing voltage constant, which property will be measured?",
+      "qid": 1,
+      "option_a": "Saturation Current (Is)",
+      "option_b": "Voltage (V)",
+      "option_c": "Temperature (T)",
+      "option_d": "Resistance (R)",
+      "correct_option": "a"
+   },
+   {
+      "question": "The energy band gap of a semiconductor diode is the energy difference between:",
+      "qid": 2,
+      "option_a": "Conduction band and valence band",
+      "option_b": "Valence band and forbidden band",
+      "option_c": "Conduction band and forbidden band",
+      "option_d": "P-type and N-type regions",
+      "correct_option": "a"
+   },
+   {
+      "question": "When sufficient energy is provided by increasing the temperatue in the vicinity of semiconductor diode, what happens to electrons in the material?",
+      "qid": 3,
+      "option_a": "Electrons move to the conduction band.",
+      "option_b": "Electrons move to the valence band.",
+      "option_c": "Electrons remain in the forbidden band.",
+      "option_d": "Electrons are emitted from the diode.",
+      "correct_option": "a"
+   },
+   {
+      "question": "What is the purpose of keeping the biasing voltage constant during the experiment?",
+      "qid": 4,
+      "option_a": "To prevent overheating of the diode",
+      "option_b": "To ensure a constant initial current flows through the diode",
+      "option_c": "To maintain a constant temperature in the setup",
+      "option_d": "To reduce the complexity of the experiment",
+      "correct_option": "b"
+   },
+   {
+      "question": "How does the energy band gap of a semiconductor diode affect its electrical conductivity with increasing temperature?",
+      "qid": 5,
+      "option_a": "Conductivity increases with temperature.",
+      "option_b": "Conductivity decreases with temperature.",
+      "option_c": "Conductivity remains constant with temperature.",
+      "option_d": "Conductivity is independent of the energy band gap.",
+      "correct_option": "a"
+   }
+]

@@ -9,3 +9,4 @@ In semiconductor there is a energy gap (Eg) between the its conduction band & va
 
 ![diagram2](./images/diagram2.png)
 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script>
