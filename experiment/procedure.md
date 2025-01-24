@@ -1,5 +1,3 @@
-## Procedure
-
 Trace the circuit switch on the training board.
 Insert the thermometer provided with the unit into the opening of the Bakelite cap.
 
