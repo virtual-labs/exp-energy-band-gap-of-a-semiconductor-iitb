@@ -5,6 +5,6 @@ In semiconductor there is a energy gap (Eg) between the its conduction band & va
 
 <img src="./images/diagram1.png">
 
-<img src="./images/diagram2.png">
+<img src="./images/diagram2.png" style="width:100%">
 
 <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script>
