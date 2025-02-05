@@ -1,0 +1,48 @@
+[
+   {
+      "question": " What happens to the Energy Band Gap when a Semiconductor Diode is doped with impurities?",
+      "qid": 1,
+      "option_a": "The Energy Band Gap decreases",
+      "option_b": "The Energy Band Gap increases",
+      "option_c": "The Energy Band Gap remains unchanged",
+      "option_d": "The Energy Band Gap becomes infinite",
+      "correct_option": "a"
+   },
+   {
+      "question": "At absolute zero temperature (0 Kelvin), a semiconductor behaves as a(n):",
+      "qid": 2,
+      "option_a": "Insulator",
+      "option_b": "Conductor",
+      "option_c": "Superconductor",
+      "option_d": "Semiconductor",
+      "correct_option": "a"
+   },
+   {
+
+      "question": "In which biasing mode does a Semiconductor Diode have the smallest energy barrier and hence conduct electricity easily?",
+      "qid": 3,
+      "option_a": "Forward-biased",
+      "option_b": "Reverse-biased",
+      "option_c": "Zero-biased",
+      "option_d": "Reverse-breakdown biased",
+      "correct_option": "a"
+   },
+   {
+      "question": "When a Semiconductor Diode is reverse-biased, the width of the depletion region:",
+      "qid": 4,
+      "option_a": "Increases",
+      "option_b": "Decreases",
+      "option_c": "Remains Constant",
+      "option_d": "Depends on the Doping Concentration",
+      "correct_option": "a"
+   },
+   {
+      "question": "The Energy Band Gap of a Semiconductor Diode determines its:",
+      "qid": 5,
+      "option_a": "Conductivity",
+      "option_b": "Maximum operating voltage",
+      "option_c": "Maximum operating current",
+      "option_d": "Forward voltage drop",
+      "correct_option": "a"
+   }
+]
