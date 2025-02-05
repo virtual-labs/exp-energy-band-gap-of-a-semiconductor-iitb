@@ -1,0 +1,551 @@
+
+/home/runner/work/exp-energy-band-gap-of-a-semiconductor-iitb/exp-energy-band-gap-of-a-semiconductor-iitb/experiment/simulation/common_libraries/js/ts_components/collapse_step.js
+   1:10  warning  'show_step' is defined but never used                 no-unused-vars
+   2:5   warning  '$' is not defined                                    no-undef
+   3:9   warning  '$' is not defined                                    no-undef
+   6:10  warning  'hide_step' is defined but never used                 no-unused-vars
+   7:5   warning  '$' is not defined                                    no-undef
+   8:9   warning  '$' is not defined                                    no-undef
+  11:10  warning  'get_collapse_btn_text' is defined but never used     no-unused-vars
+  20:10  warning  'get_collapse_btn_element' is defined but never used  no-unused-vars
+  29:10  warning  'hide_all_steps' is defined but never used            no-unused-vars
+  31:9   warning  '$' is not defined                                    no-undef
+
+/home/runner/work/exp-energy-band-gap-of-a-semiconductor-iitb/exp-energy-band-gap-of-a-semiconductor-iitb/experiment/simulation/common_libraries/js/ts_components/matrix.js
+   27:26  warning  'MathJax' is not defined                                no-undef
+   32:7   warning  'Matrix_Without_String' is defined but never used       no-unused-vars
+   52:26  warning  'MathJax' is not defined                                no-undef
+   56:10  warning  'get_matrix_html' is defined but never used             no-unused-vars
+   87:13  warning  'row_html' is assigned a value but never used           no-unused-vars
+   99:10  warning  'get_matrix_html_with_title' is defined but never used  no-unused-vars
+  131:13  warning  'row_html' is assigned a value but never used           no-unused-vars
+  143:10  warning  'convert_2d_to_1d_vector' is defined but never used     no-unused-vars
+  156:10  warning  'convert_1d_to_2d_matrix' is defined but never used     no-unused-vars
+
+/home/runner/work/exp-energy-band-gap-of-a-semiconductor-iitb/exp-energy-band-gap-of-a-semiconductor-iitb/experiment/simulation/common_libraries/js/ts_components/pannel.js
+  8:7  warning  'Pannel' is defined but never used  no-unused-vars
+
+/home/runner/work/exp-energy-band-gap-of-a-semiconductor-iitb/exp-energy-band-gap-of-a-semiconductor-iitb/experiment/simulation/common_libraries/js/ts_components/questions.js
+   6:17  warning  'op1' is assigned a value but never used      no-unused-vars
+   7:17  warning  'op2' is assigned a value but never used      no-unused-vars
+   8:17  warning  'op3' is assigned a value but never used      no-unused-vars
+   9:17  warning  'op4' is assigned a value but never used      no-unused-vars
+  94:7   warning  'Question_Options' is defined but never used  no-unused-vars
+
+/home/runner/work/exp-energy-band-gap-of-a-semiconductor-iitb/exp-energy-band-gap-of-a-semiconductor-iitb/experiment/simulation/common_libraries/js/ts_components/tables.js
+   19:22  warning  'verify_values' is not defined                                     no-undef
+  137:22  warning  'verify_values' is not defined                                     no-undef
+  260:7   warning  'Verify_Rows_Cols_6_decimal_places' is defined but never used      no-unused-vars
+  311:22  warning  'verify_values' is not defined                                     no-undef
+  416:7   warning  'Verify_Rows_Cols_Custom_Fixed_Update1' is defined but never used  no-unused-vars
+  468:7   warning  'Show_Table_Custom_Fixed' is defined but never used                no-unused-vars
+  506:7   warning  'Verify_Rows_Cols_Strings' is defined but never used               no-unused-vars
+  527:22  warning  'verify_values' is not defined                                     no-undef
+  663:7   warning  'Display_Table' is defined but never used                          no-unused-vars
+
+/home/runner/work/exp-energy-band-gap-of-a-semiconductor-iitb/exp-energy-band-gap-of-a-semiconductor-iitb/experiment/simulation/common_libraries/js/ts_math_library/general_math_functions.js
+    1:10  warning  'verify_values' is defined but never used                   no-unused-vars
+   17:10  warning  'random1' is defined but never used                         no-unused-vars
+   21:10  warning  'std_deviation' is defined but never used                   no-unused-vars
+   26:10  warning  'gauss' is defined but never used                           no-unused-vars
+   56:10  warning  'hide_panel' is defined but never used                      no-unused-vars
+   63:10  warning  'inverse_matrix' is defined but never used                  no-unused-vars
+   96:10  warning  'matrix_multiplication' is defined but never used           no-unused-vars
+  113:10  warning  'transpose_matrix' is defined but never used                no-unused-vars
+  123:10  warning  'matrix_multiplication_8decimal' is defined but never used  no-unused-vars
+  140:10  warning  'adjoint_2x2_matrix' is defined but never used              no-unused-vars
+  145:10  warning  'find_deteminant' is defined but never used                 no-unused-vars
+  174:10  warning  'get_Submatrix' is defined but never used                   no-unused-vars
+
+/home/runner/work/exp-energy-band-gap-of-a-semiconductor-iitb/exp-energy-band-gap-of-a-semiconductor-iitb/experiment/simulation/common_libraries/js/ts_math_library/regression.js
+   1:10  warning  'regression_linear' is defined but never used            no-unused-vars
+  18:10  warning  'regression_linear_1variable' is defined but never used  no-unused-vars
+  27:10  warning  'regression_linear_2variable' is defined but never used  no-unused-vars
+  52:11  warning  'gauss' is not defined                                   no-undef
+
+/home/runner/work/exp-energy-band-gap-of-a-semiconductor-iitb/exp-energy-band-gap-of-a-semiconductor-iitb/experiment/simulation/common_libraries/math.ob.js
+  1:745  warning  'b' is already defined  no-redeclare
+
+/home/runner/work/exp-energy-band-gap-of-a-semiconductor-iitb/exp-energy-band-gap-of-a-semiconductor-iitb/experiment/simulation/js/activity1.js
+    8:14   warning  'Pannel' is not defined                                no-undef
+   14:10   warning  'start_act1' is defined but never used                 no-unused-vars
+   21:10   warning  'move_to_activity3' is defined but never used          no-unused-vars
+   24:5    warning  'activity4' is not defined                             no-undef
+   33:5    warning  'global_score' is assigned a value but never used      no-unused-vars
+   34:5    warning  'a1_panel' is defined but never used                   no-unused-vars
+   35:5    warning  'all_text_content' is assigned a value but never used  no-unused-vars
+   36:5    warning  'canvas_box_scale' is already defined                  no-redeclare
+   36:5    warning  'canvas_box_scale' is assigned a value but never used  no-unused-vars
+   39:5    warning  'a1_scene' is defined but never used                   no-unused-vars
+   46:5    warning  'display_score' is defined but never used              no-unused-vars
+   47:5    warning  'timer1' is assigned a value but never used            no-unused-vars
+   62:17   warning  'Scene' is not defined                                 no-undef
+   67:27   warning  'bootstrap' is not defined                             no-undef
+  106:18   warning  'Chemistry' is not defined                             no-undef
+  106:42   warning  'dc_power_supply' is not defined                       no-undef
+  106:63   warning  'Chemistry' is not defined                             no-undef
+  109:9    warning  'sq' is already defined                                no-redeclare
+  109:18   warning  'Chemistry' is not defined                             no-undef
+  109:42   warning  'voltmeter' is not defined                             no-undef
+  109:57   warning  'Chemistry' is not defined                             no-undef
+  112:9    warning  'sq' is already defined                                no-redeclare
+  112:18   warning  'Chemistry' is not defined                             no-undef
+  112:42   warning  'diode' is not defined                                 no-undef
+  112:53   warning  'Chemistry' is not defined                             no-undef
+  115:9    warning  'sq' is already defined                                no-redeclare
+  115:18   warning  'Chemistry' is not defined                             no-undef
+  115:42   warning  'heater' is not defined                                no-undef
+  115:54   warning  'Chemistry' is not defined                             no-undef
+  118:9    warning  'sq' is already defined                                no-redeclare
+  118:18   warning  'Chemistry' is not defined                             no-undef
+  118:42   warning  'thermometer' is not defined                           no-undef
+  118:59   warning  'Chemistry' is not defined                             no-undef
+  121:9    warning  'sq' is already defined                                no-redeclare
+  121:18   warning  'Chemistry' is not defined                             no-undef
+  121:42   warning  'ammeter' is not defined                               no-undef
+  121:55   warning  'Chemistry' is not defined                             no-undef
+  188:25   warning  'Chemistry' is not defined                             no-undef
+  188:50   warning  'Chemistry' is not defined                             no-undef
+  199:10   warning  'dc_power_supply' is not defined                       no-undef
+  199:27   warning  'dc_power_supply' is not defined                       no-undef
+  200:10   warning  'voltmeter' is not defined                             no-undef
+  200:21   warning  'voltmeter' is not defined                             no-undef
+  201:10   warning  'diode' is not defined                                 no-undef
+  201:17   warning  'diode' is not defined                                 no-undef
+  202:10   warning  'heater' is not defined                                no-undef
+  202:18   warning  'heater' is not defined                                no-undef
+  203:10   warning  'thermometer' is not defined                           no-undef
+  203:23   warning  'thermometer' is not defined                           no-undef
+  204:10   warning  'ammeter' is not defined                               no-undef
+  204:19   warning  'ammeter' is not defined                               no-undef
+  207:13   warning  'Chemistry' is not defined                             no-undef
+  207:51   warning  'Chemistry' is not defined                             no-undef
+  208:13   warning  'Chemistry' is not defined                             no-undef
+  208:45   warning  'Chemistry' is not defined                             no-undef
+  209:13   warning  'Chemistry' is not defined                             no-undef
+  209:41   warning  'Chemistry' is not defined                             no-undef
+  210:13   warning  'Chemistry' is not defined                             no-undef
+  210:42   warning  'Chemistry' is not defined                             no-undef
+  211:13   warning  'Chemistry' is not defined                             no-undef
+  211:47   warning  'Chemistry' is not defined                             no-undef
+  212:13   warning  'Chemistry' is not defined                             no-undef
+  212:43   warning  'Chemistry' is not defined                             no-undef
+  220:12   warning  Unexpected constant condition                          no-constant-condition
+  242:49   warning  'Chemistry' is not defined                             no-undef
+  245:39   warning  'bootstrap' is not defined                             no-undef
+  277:30   warning  'Chemistry' is not defined                             no-undef
+  277:73   warning  'Chemistry' is not defined                             no-undef
+  305:13   warning  'bsOffcanvas' is already defined                       no-redeclare
+  305:31   warning  'bootstrap' is not defined                             no-undef
+  307:30   warning  'Chemistry' is not defined                             no-undef
+  307:118  warning  'Chemistry' is not defined                             no-undef
+  350:24   warning  'activity4' is not defined                             no-undef
+
+/home/runner/work/exp-energy-band-gap-of-a-semiconductor-iitb/exp-energy-band-gap-of-a-semiconductor-iitb/experiment/simulation/js/activity4.js
+    1:5    warning  'std_band_gap' is assigned a value but never used  no-unused-vars
+    3:5    warning  'anim' is assigned a value but never used          no-unused-vars
+    6:5    warning  'temp1' is defined but never used                  no-unused-vars
+    7:5    warning  'temp2' is defined but never used                  no-unused-vars
+    8:5    warning  'temp3' is defined but never used                  no-unused-vars
+    9:5    warning  'temp4' is defined but never used                  no-unused-vars
+   10:5    warning  'Is1' is defined but never used                    no-unused-vars
+   11:5    warning  'Is2' is defined but never used                    no-unused-vars
+   12:5    warning  'Is3' is defined but never used                    no-unused-vars
+   13:5    warning  'Is4' is defined but never used                    no-unused-vars
+   16:10   warning  'activity4' is defined but never used              no-unused-vars
+   17:5    warning  'pp' is not defined                                no-undef
+   18:5    warning  'pp' is not defined                                no-undef
+   19:5    warning  'pp' is not defined                                no-undef
+   20:5    warning  'pp' is not defined                                no-undef
+   55:5    warning  'pp' is not defined                                no-undef
+   56:5    warning  'pp' is not defined                                no-undef
+   57:5    warning  'pp' is not defined                                no-undef
+   58:5    warning  'canvas' is not defined                            no-undef
+   58:14   warning  'pp' is not defined                                no-undef
+   59:5    warning  'context' is not defined                           no-undef
+   59:15   warning  'canvas' is not defined                            no-undef
+   61:5    warning  'canvas' is not defined                            no-undef
+   62:5    warning  'rect' is not defined                              no-undef
+   62:12   warning  'canvas' is not defined                            no-undef
+   63:5    warning  'scene' is not defined                             no-undef
+   63:17   warning  'Scene' is not defined                             no-undef
+   64:22   warning  'Chemistry' is not defined                         no-undef
+   64:56   warning  'Chemistry' is not defined                         no-undef
+   64:83   warning  'canvas' is not defined                            no-undef
+   66:27   warning  'Chemistry' is not defined                         no-undef
+   66:68   warning  'Chemistry' is not defined                         no-undef
+   66:95   warning  'canvas' is not defined                            no-undef
+   68:25   warning  'Chemistry' is not defined                         no-undef
+   68:46   warning  'Chemistry' is not defined                         no-undef
+   68:77   warning  'canvas' is not defined                            no-undef
+   69:26   warning  'Chemistry' is not defined                         no-undef
+   69:47   warning  'Chemistry' is not defined                         no-undef
+   69:78   warning  'canvas' is not defined                            no-undef
+   70:20   warning  'Chemistry' is not defined                         no-undef
+   70:44   warning  'assembly' is not defined                          no-undef
+   70:58   warning  'Chemistry' is not defined                         no-undef
+   70:110  warning  'canvas' is not defined                            no-undef
+   71:18   warning  'Chemistry' is not defined                         no-undef
+   71:47   warning  'Chemistry' is not defined                         no-undef
+   71:74   warning  'canvas' is not defined                            no-undef
+   72:19   warning  'Chemistry' is not defined                         no-undef
+   72:49   warning  'Chemistry' is not defined                         no-undef
+   72:76   warning  'canvas' is not defined                            no-undef
+   73:5    warning  'scene' is not defined                             no-undef
+   74:5    warning  'scene' is not defined                             no-undef
+   75:5    warning  'scene' is not defined                             no-undef
+   76:5    warning  'scene' is not defined                             no-undef
+   77:5    warning  'scene' is not defined                             no-undef
+   78:5    warning  'scene' is not defined                             no-undef
+   79:5    warning  'scene' is not defined                             no-undef
+   89:5    warning  'scene' is not defined                             no-undef
+   93:5    warning  'canvas' is not defined                            no-undef
+   94:5    warning  'canvas' is not defined                            no-undef
+   94:23   warning  'canvas' is not defined                            no-undef
+   95:5    warning  'lscale' is not defined                            no-undef
+   95:14   warning  'canvas' is not defined                            no-undef
+   97:9    warning  'canvas' is not defined                            no-undef
+  100:5    warning  'context' is not defined                           no-undef
+  100:26   warning  'canvas' is not defined                            no-undef
+  101:5    warning  'context' is not defined                           no-undef
+  156:5    warning  'pp' is not defined                                no-undef
+  157:5    warning  'show_panel' is not defined                        no-undef
+  158:5    warning  'pp' is not defined                                no-undef
+  164:25   warning  'energy_band' is not defined                       no-undef
+  165:48   warning  'energy_band' is not defined                       no-undef
+  165:75   warning  'energy_band' is not defined                       no-undef
+  168:10   warning  'least_count_select' is defined but never used     no-unused-vars
+  170:5    warning  'pp' is not defined                                no-undef
+  171:5    warning  'show_panel' is not defined                        no-undef
+  176:9    warning  'material' is not defined                          no-undef
+  182:10   warning  'voltage_select' is defined but never used         no-unused-vars
+  183:5    warning  'pp' is not defined                                no-undef
+  184:5    warning  'show_panel' is not defined                        no-undef
+  189:9    warning  'temp_least_count' is not defined                  no-undef
+  199:10   warning  'heater_on' is defined but never used              no-unused-vars
+  200:5    warning  'pp' is not defined                                no-undef
+  201:5    warning  'show_panel' is not defined                        no-undef
+  202:5    warning  'canvas' is not defined                            no-undef
+  207:9    warning  'selected_voltage' is not defined                  no-undef
+  208:9    warning  'volt' is not defined                              no-undef
+  208:22   warning  'selected_voltage' is not defined                  no-undef
+  211:10   warning  'temp_dec' is defined but never used               no-unused-vars
+  216:51   warning  'temp_least_count' is not defined                  no-undef
+  221:9    warning  'pp' is not defined                                no-undef
+  222:25   warning  'energy_band' is not defined                       no-undef
+  223:13   warning  'energy_band' is not defined                       no-undef
+  223:36   warning  'material' is not defined                          no-undef
+  224:24   warning  'energy_band' is not defined                       no-undef
+  225:33   warning  'energy_band' is not defined                       no-undef
+  226:31   warning  'energy_band' is not defined                       no-undef
+  226:46   warning  'volt' is not defined                              no-undef
+  227:13   warning  'temp_reading' is not defined                      no-undef
+  227:31   warning  'energy_band' is not defined                       no-undef
+  228:13   warning  'Is_reading' is not defined                        no-undef
+  228:29   warning  'energy_band' is not defined                       no-undef
+  228:44   warning  'volt' is not defined                              no-undef
+  277:9    warning  'material' is not defined                          no-undef
+  278:29   warning  'energy_band' is not defined                       no-undef
+  280:13   warning  'energy_band' is not defined                       no-undef
+  280:28   warning  'volt' is not defined                              no-undef
+  283:29   warning  'energy_band' is not defined                       no-undef
+  285:13   warning  'energy_band' is not defined                       no-undef
+  285:28   warning  'volt' is not defined                              no-undef
+  290:9    warning  'pp' is not defined                                no-undef
+  291:9    warning  'show_panel' is not defined                        no-undef
+  292:9    warning  'temp_reading' is not defined                      no-undef
+  293:9    warning  'Is_reading' is not defined                        no-undef
+  299:37   warning  'rect' is not defined                              no-undef
+  299:47   warning  'lscale' is not defined                            no-undef
+  300:25   warning  'canvas' is not defined                            no-undef
+  300:54   warning  'rect' is not defined                              no-undef
+  300:65   warning  'lscale' is not defined                            no-undef
+  305:13   warning  'canvas' is not defined                            no-undef
+  306:13   warning  'canvas' is not defined                            no-undef
+  308:13   warning  'scene' is not defined                             no-undef
+  314:37   warning  'rect' is not defined                              no-undef
+  314:47   warning  'lscale' is not defined                            no-undef
+  315:25   warning  'canvas' is not defined                            no-undef
+  315:54   warning  'rect' is not defined                              no-undef
+  315:65   warning  'lscale' is not defined                            no-undef
+  321:13   warning  'canvas' is not defined                            no-undef
+  324:13   warning  'scene' is not defined                             no-undef
+  326:13   warning  'pp' is not defined                                no-undef
+  327:13   warning  'show_panel' is not defined                        no-undef
+  331:10   warning  'act4_verify' is defined but never used            no-unused-vars
+  337:9    warning  'T' is not defined                                 no-undef
+  338:9    warning  'IS' is not defined                                no-undef
+  340:22   warning  'T' is not defined                                 no-undef
+  341:23   warning  'IS' is not defined                                no-undef
+  342:33   warning  'temp_reading' is not defined                      no-undef
+  343:31   warning  'Is_reading' is not defined                        no-undef
+  344:25   warning  'energy_band' is not defined                       no-undef
+  345:13   warning  'energy_band' is not defined                       no-undef
+  345:36   warning  'material' is not defined                          no-undef
+  346:28   warning  'energy_band' is not defined                       no-undef
+  347:33   warning  'T' is not defined                                 no-undef
+  348:22   warning  'verify_values' is not defined                     no-undef
+  348:36   warning  'T' is not defined                                 no-undef
+  348:42   warning  'temp_reading' is not defined                      no-undef
+  352:22   warning  'verify_values' is not defined                     no-undef
+  352:36   warning  'IS' is not defined                                no-undef
+  352:43   warning  'Is_reading' is not defined                        no-undef
+  360:5    warning  'activity5' is not defined                         no-undef
+
+/home/runner/work/exp-energy-band-gap-of-a-semiconductor-iitb/exp-energy-band-gap-of-a-semiconductor-iitb/experiment/simulation/js/activity5.js
+   4:10  warning  'activity5' is defined but never used          no-unused-vars
+   5:5   warning  'pp' is not defined                            no-undef
+   6:5   warning  'pp' is not defined                            no-undef
+   7:5   warning  'pp' is not defined                            no-undef
+   8:5   warning  'pp' is not defined                            no-undef
+  26:25  warning  'energy_band' is not defined                   no-undef
+  27:13  warning  'energy_band' is not defined                   no-undef
+  27:36  warning  'material' is not defined                      no-undef
+  28:33  warning  'energy_band' is not defined                   no-undef
+  31:26  warning  'energy_band' is not defined                   no-undef
+  32:26  warning  'energy_band' is not defined                   no-undef
+  32:47  warning  'selected_voltage' is not defined              no-undef
+  33:32  warning  'energy_band' is not defined                   no-undef
+  35:37  warning  'energy_band' is not defined                   no-undef
+  35:58  warning  'selected_voltage' is not defined              no-undef
+  36:17  warning  'main_table_data' is not defined               no-undef
+  41:17  warning  'main_table_data' is not defined               no-undef
+  43:10  warning  'verify_main_table' is defined but never used  no-unused-vars
+  47:10  warning  'verify_values' is not defined                 no-undef
+  47:48  warning  'main_table_data' is not defined               no-undef
+  51:10  warning  'verify_values' is not defined                 no-undef
+  51:48  warning  'main_table_data' is not defined               no-undef
+  55:10  warning  'verify_values' is not defined                 no-undef
+  55:48  warning  'main_table_data' is not defined               no-undef
+  64:5   warning  'pp' is not defined                            no-undef
+  66:25  warning  'main_table_data' is not defined               no-undef
+  68:19  warning  'main_table_data' is not defined               no-undef
+  69:19  warning  'main_table_data' is not defined               no-undef
+  70:19  warning  'main_table_data' is not defined               no-undef
+  71:19  warning  'main_table_data' is not defined               no-undef
+  72:19  warning  'main_table_data' is not defined               no-undef
+  73:19  warning  'main_table_data' is not defined               no-undef
+  76:21  warning  'Table1' is not defined                        no-undef
+  77:5   warning  'pp' is not defined                            no-undef
+  79:5   warning  'pp' is not defined                            no-undef
+  80:5   warning  'pp' is not defined                            no-undef
+
+/home/runner/work/exp-energy-band-gap-of-a-semiconductor-iitb/exp-energy-band-gap-of-a-semiconductor-iitb/experiment/simulation/js/activity7.js
+    6:10  warning  'draw_chart' is defined but never used        no-unused-vars
+    8:5   warning  'pp' is not defined                           no-undef
+    9:5   warning  'pp' is not defined                           no-undef
+   10:5   warning  'pp' is not defined                           no-undef
+   11:5   warning  'pp' is not defined                           no-undef
+   12:5   warning  'pp' is not defined                           no-undef
+   17:25  warning  'main_table_data' is not defined              no-undef
+   18:20  warning  'main_table_data' is not defined              no-undef
+   19:19  warning  'main_table_data' is not defined              no-undef
+   34:21  warning  'Chart' is not defined                        no-undef
+   78:30  warning  'material' is not defined                     no-undef
+   87:11  warning  'regression_linear' is not defined            no-undef
+   94:5   warning  'pp' is not defined                           no-undef
+  134:5   warning  'pp' is not defined                           no-undef
+  136:10  warning  'verify_act7' is defined but never used       no-unused-vars
+  139:10  warning  'verify_values' is not defined                no-undef
+  143:5   warning  'pp' is not defined                           no-undef
+  144:5   warning  'pp' is not defined                           no-undef
+  149:56  warning  'material' is not defined                     no-undef
+  160:5   warning  'pp' is not defined                           no-undef
+  162:10  warning  'verify_band_gap' is defined but never used   no-unused-vars
+  164:10  warning  'verify_values' is not defined                no-undef
+  168:5   warning  'pp' is not defined                           no-undef
+  169:5   warning  'pp' is not defined                           no-undef
+  170:5   warning  'show_panel' is not defined                   no-undef
+  171:5   warning  'pp' is not defined                           no-undef
+  175:40  warning  'material' is not defined                     no-undef
+  175:81  warning  'std_band_gap' is not defined                 no-undef
+  196:10  warning  'compare_band_gap' is defined but never used  no-unused-vars
+  200:38  warning  'std_band_gap' is not defined                 no-undef
+
+/home/runner/work/exp-energy-band-gap-of-a-semiconductor-iitb/exp-energy-band-gap-of-a-semiconductor-iitb/experiment/simulation/js/common.js
+    1:10  warning  'verify_values' is defined but never used                no-unused-vars
+   18:10  warning  'std_deviation' is defined but never used                no-unused-vars
+   23:10  warning  'regression_linear' is defined but never used            no-unused-vars
+   40:10  warning  'ascending_random_array' is defined but never used       no-unused-vars
+   42:12  warning  Unexpected constant condition                            no-constant-condition
+   59:10  warning  'regression_linear_2variable' is defined but never used  no-unused-vars
+  135:10  warning  'show_panel' is defined but never used                   no-unused-vars
+  137:31  warning  'bootstrap' is not defined                               no-undef
+  144:10  warning  'hide_panel' is defined but never used                   no-unused-vars
+
+/home/runner/work/exp-energy-band-gap-of-a-semiconductor-iitb/exp-energy-band-gap-of-a-semiconductor-iitb/experiment/simulation/js/data.js
+   1:5   warning  'act5_table_data' is assigned a value but never used   no-unused-vars
+   7:5   warning  'act4_table_data' is assigned a value but never used   no-unused-vars
+  12:5   warning  'main_table_data' is assigned a value but never used   no-unused-vars
+  84:47  warning  'std_deviation' is not defined                         no-undef
+  85:47  warning  'std_deviation' is not defined                         no-undef
+  86:47  warning  'std_deviation' is not defined                         no-undef
+  87:47  warning  'std_deviation' is not defined                         no-undef
+  92:5   warning  'temp_reading' is assigned a value but never used      no-unused-vars
+  93:5   warning  'Is_reading' is assigned a value but never used        no-unused-vars
+  94:5   warning  'T' is assigned a value but never used                 no-unused-vars
+  95:5   warning  'IS' is assigned a value but never used                no-unused-vars
+  96:5   warning  'material' is assigned a value but never used          no-unused-vars
+  97:5   warning  'selected_voltage' is assigned a value but never used  no-unused-vars
+  98:5   warning  'volt' is assigned a value but never used              no-unused-vars
+  99:5   warning  'temp_least_count' is assigned a value but never used  no-unused-vars
+
+/home/runner/work/exp-energy-band-gap-of-a-semiconductor-iitb/exp-energy-band-gap-of-a-semiconductor-iitb/experiment/simulation/js/dummy.js
+  2:14  warning  'Pannel' is not defined  no-undef
+
+/home/runner/work/exp-energy-band-gap-of-a-semiconductor-iitb/exp-energy-band-gap-of-a-semiconductor-iitb/experiment/simulation/js/geomerty.js
+   33:49   warning  'lscale' is not defined          no-undef
+   34:49   warning  'lscale' is not defined          no-undef
+   46:23   warning  'pt1' is defined but never used  no-unused-vars
+   46:28   warning  'pt2' is defined but never used  no-unused-vars
+   46:33   warning  'pt3' is defined but never used  no-unused-vars
+   50:24   warning  'geo' is defined but never used  no-unused-vars
+   69:44   warning  'lscale' is not defined          no-undef
+   69:66   warning  'lscale' is not defined          no-undef
+   69:88   warning  'lscale' is not defined          no-undef
+   82:48   warning  'lscale' is not defined          no-undef
+   83:48   warning  'lscale' is not defined          no-undef
+  108:47   warning  'lscale' is not defined          no-undef
+  108:69   warning  'lscale' is not defined          no-undef
+  109:60   warning  'lscale' is not defined          no-undef
+  109:95   warning  'lscale' is not defined          no-undef
+  131:39   warning  'lscale' is not defined          no-undef
+  131:57   warning  'lscale' is not defined          no-undef
+  132:39   warning  'lscale' is not defined          no-undef
+  132:57   warning  'lscale' is not defined          no-undef
+  181:39   warning  'lscale' is not defined          no-undef
+  181:57   warning  'lscale' is not defined          no-undef
+  182:39   warning  'lscale' is not defined          no-undef
+  182:57   warning  'lscale' is not defined          no-undef
+  225:33   warning  'lscale' is not defined          no-undef
+  226:33   warning  'lscale' is not defined          no-undef
+  274:50   warning  'lscale' is not defined          no-undef
+  274:72   warning  'lscale' is not defined          no-undef
+  279:61   warning  'lscale' is not defined          no-undef
+  279:84   warning  'lscale' is not defined          no-undef
+  279:102  warning  'lscale' is not defined          no-undef
+  279:120  warning  'lscale' is not defined          no-undef
+  293:33   warning  'lscale' is not defined          no-undef
+  294:33   warning  'lscale' is not defined          no-undef
+  295:41   warning  'lscale' is not defined          no-undef
+  295:64   warning  'lscale' is not defined          no-undef
+  295:98   warning  'lscale' is not defined          no-undef
+  295:121  warning  'lscale' is not defined          no-undef
+  296:45   warning  'lscale' is not defined          no-undef
+  296:68   warning  'lscale' is not defined          no-undef
+  296:102  warning  'lscale' is not defined          no-undef
+  296:125  warning  'lscale' is not defined          no-undef
+  323:61   warning  'lscale' is not defined          no-undef
+  323:90   warning  'lscale' is not defined          no-undef
+  324:61   warning  'lscale' is not defined          no-undef
+  324:96   warning  'lscale' is not defined          no-undef
+  325:66   warning  'lscale' is not defined          no-undef
+  325:101  warning  'lscale' is not defined          no-undef
+  326:66   warning  'lscale' is not defined          no-undef
+  326:100  warning  'lscale' is not defined          no-undef
+  327:67   warning  'lscale' is not defined          no-undef
+  327:101  warning  'lscale' is not defined          no-undef
+  328:67   warning  'lscale' is not defined          no-undef
+  328:96   warning  'lscale' is not defined          no-undef
+  329:61   warning  'lscale' is not defined          no-undef
+  329:90   warning  'lscale' is not defined          no-undef
+  346:33   warning  'lscale' is not defined          no-undef
+  347:33   warning  'lscale' is not defined          no-undef
+  376:46   warning  'lscale' is not defined          no-undef
+  382:50   warning  'lscale' is not defined          no-undef
+  382:72   warning  'lscale' is not defined          no-undef
+  411:52   warning  'lscale' is not defined          no-undef
+  411:79   warning  'lscale' is not defined          no-undef
+  413:56   warning  'lscale' is not defined          no-undef
+  413:83   warning  'lscale' is not defined          no-undef
+  450:50   warning  'lscale' is not defined          no-undef
+  450:72   warning  'lscale' is not defined          no-undef
+  456:61   warning  'lscale' is not defined          no-undef
+  456:84   warning  'lscale' is not defined          no-undef
+  456:102  warning  'lscale' is not defined          no-undef
+  456:120  warning  'lscale' is not defined          no-undef
+  470:33   warning  'lscale' is not defined          no-undef
+  471:33   warning  'lscale' is not defined          no-undef
+  472:41   warning  'lscale' is not defined          no-undef
+  472:64   warning  'lscale' is not defined          no-undef
+  472:98   warning  'lscale' is not defined          no-undef
+  472:121  warning  'lscale' is not defined          no-undef
+  473:45   warning  'lscale' is not defined          no-undef
+  473:68   warning  'lscale' is not defined          no-undef
+  473:102  warning  'lscale' is not defined          no-undef
+  473:125  warning  'lscale' is not defined          no-undef
+  502:50   warning  'lscale' is not defined          no-undef
+  502:72   warning  'lscale' is not defined          no-undef
+  507:139  warning  'lscale' is not defined          no-undef
+  507:172  warning  'lscale' is not defined          no-undef
+  507:205  warning  'lscale' is not defined          no-undef
+  507:225  warning  'lscale' is not defined          no-undef
+  528:50   warning  'lscale' is not defined          no-undef
+  528:72   warning  'lscale' is not defined          no-undef
+  533:139  warning  'lscale' is not defined          no-undef
+  533:172  warning  'lscale' is not defined          no-undef
+  533:205  warning  'lscale' is not defined          no-undef
+  533:225  warning  'lscale' is not defined          no-undef
+  555:50   warning  'lscale' is not defined          no-undef
+  555:72   warning  'lscale' is not defined          no-undef
+  560:133  warning  'lscale' is not defined          no-undef
+  560:172  warning  'lscale' is not defined          no-undef
+  560:205  warning  'lscale' is not defined          no-undef
+  560:224  warning  'lscale' is not defined          no-undef
+  584:39   warning  'lscale' is not defined          no-undef
+  584:53   warning  'lscale' is not defined          no-undef
+  585:39   warning  'lscale' is not defined          no-undef
+  585:53   warning  'lscale' is not defined          no-undef
+  586:39   warning  'lscale' is not defined          no-undef
+  586:53   warning  'lscale' is not defined          no-undef
+  587:39   warning  'lscale' is not defined          no-undef
+  587:53   warning  'lscale' is not defined          no-undef
+  594:36   warning  'lscale' is not defined          no-undef
+  594:50   warning  'lscale' is not defined          no-undef
+  594:63   warning  'lscale' is not defined          no-undef
+  605:36   warning  'lscale' is not defined          no-undef
+  605:50   warning  'lscale' is not defined          no-undef
+  605:63   warning  'lscale' is not defined          no-undef
+  632:46   warning  'lscale' is not defined          no-undef
+  637:50   warning  'lscale' is not defined          no-undef
+  637:72   warning  'lscale' is not defined          no-undef
+  659:50   warning  'lscale' is not defined          no-undef
+  659:72   warning  'lscale' is not defined          no-undef
+  663:46   warning  'lscale' is not defined          no-undef
+  664:46   warning  'lscale' is not defined          no-undef
+  664:67   warning  'lscale' is not defined          no-undef
+  665:49   warning  'lscale' is not defined          no-undef
+  702:50   warning  'lscale' is not defined          no-undef
+  702:72   warning  'lscale' is not defined          no-undef
+  718:38   warning  'lscale' is not defined          no-undef
+  718:51   warning  'lscale' is not defined          no-undef
+  720:38   warning  'lscale' is not defined          no-undef
+  722:38   warning  'lscale' is not defined          no-undef
+  722:52   warning  'lscale' is not defined          no-undef
+
+/home/runner/work/exp-energy-band-gap-of-a-semiconductor-iitb/exp-energy-band-gap-of-a-semiconductor-iitb/experiment/simulation/js/pannel.js
+    8:7  warning  'Pannel' is defined but never used  no-unused-vars
+  110:7  warning  'Table1' is defined but never used  no-unused-vars
+
+/home/runner/work/exp-energy-band-gap-of-a-semiconductor-iitb/exp-energy-band-gap-of-a-semiconductor-iitb/experiment/simulation/js/scene.js
+   1:7    warning  'Scene' is defined but never used         no-unused-vars
+  11:9    warning  'context' is not defined                  no-undef
+  11:33   warning  'canvas' is not defined                   no-undef
+  11:47   warning  'canvas' is not defined                   no-undef
+  27:5    warning  'context' is not defined                  no-undef
+  28:9    warning  'grd' is assigned a value but never used  no-unused-vars
+  28:15   warning  'context' is not defined                  no-undef
+  28:44   warning  'canvas' is not defined                   no-undef
+  28:62   warning  'canvas' is not defined                   no-undef
+  28:84   warning  'canvas' is not defined                   no-undef
+  28:102  warning  'canvas' is not defined                   no-undef
+  28:121  warning  'canvas' is not defined                   no-undef
+  36:5    warning  'context' is not defined                  no-undef
+  37:5    warning  'context' is not defined                  no-undef
+  37:28   warning  'canvas' is not defined                   no-undef
+  37:42   warning  'canvas' is not defined                   no-undef
+  38:5    warning  'context' is not defined                  no-undef
+  39:5    warning  'context' is not defined                  no-undef
+
+✖ 512 problems (0 errors, 512 warnings)
+
